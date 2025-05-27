@@ -1,0 +1,2 @@
+nsdotpy
+python-dotenv
