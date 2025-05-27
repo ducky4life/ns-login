@@ -10,6 +10,7 @@ login.yml has been configured to run every Monday and Thursday at 1 am UTC by de
    ```
    https://github.com/[github username]/[repo name]/settings/secrets/actions
    ```
+3. enter your main nation as useragent in login.py
 4. edit input.csv and include a list of switchers with a password optionally (default password in secrets will be overridden for a single switcher if a row is in `nation,password` format)
 5. run login.yml by going to
    ```
@@ -36,8 +37,9 @@ make sure you have [python](https://www.python.org/downloads/) installed.
    ```
    PASSWORD=[your puppet password]
    ```
-5. edit input.csv and include a list of switchers with a password optionally (default password in secrets will be overridden for a single switcher if a row is in `nation,password` format)
-6. run login.py
+5. enter your main nation as useragent in login.py
+6. edit input.csv and include a list of switchers with a password optionally (default password in secrets will be overridden for a single switcher if a row is in `nation,password` format)
+7. run login.py
    ```
    py login.py
    ```
