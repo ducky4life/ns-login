@@ -3,7 +3,7 @@ python script to autologin nations with github actions workflow file. `nation,pa
 
 ## Usage (github actions)
 
-1. [fork the repository](https://github.com/ducky4life/ns-login/fork) or [import it to a private repository](https://github.com/new/import) to avoid leaking passwords in plaintext if using `nation,password` format
+1. [fork the repository](https://github.com/ducky4life/ns-login/fork) or copy `https://github.com/ducky4life/ns-login.git` and [import it to a private repository](https://github.com/new/import) to avoid leaking passwords in plaintext if using `nation,password` format
 2. create new action repository secret named PASSWORD with your switcher password by going to
    ```
    https://github.com/[github username]/[repo name]/settings/secrets/actions
