@@ -3,6 +3,8 @@ python script to autologin nations with github actions workflow file. `nation,pa
 
 ## Usage (github actions)
 
+login.yml has been configured to run every Monday and Thursday at 1 am UTC by default
+
 1. [fork the repository](https://github.com/ducky4life/ns-login/fork) or copy `https://github.com/ducky4life/ns-login.git` and [import it to a private repository](https://github.com/new/import) to avoid leaking passwords in plaintext if using `nation,password` format
 2. create new action repository secret named PASSWORD with your switcher password by going to
    ```
