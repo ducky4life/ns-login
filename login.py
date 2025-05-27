@@ -5,7 +5,7 @@ import os
 
 load_dotenv()
 
-UA = "ducky"
+UA = ""
 
 session = NSSession("autologin", "1.0.0", "Ducky", UA)
 rowcount = 0
