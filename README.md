@@ -25,21 +25,25 @@ make sure you have [python](https://www.python.org/downloads/) installed.
    ```
    git clone https://github.com/ducky4life/ns-login.git
    ```
-2. install dependencies
+2. move into directory
+   ```
+   cd ns-login
+   ```
+3. install dependencies
    ```
    pip install -r requirements.txt
    ```
-3. create .env file
+4. create .env file
    ```
    touch .env
    ```
-4. put your secrets in the .env file
+5. put your secrets in the .env file
    ```
    PASSWORD=[your puppet password]
    ```
-5. enter your main nation as useragent in login.py
-6. edit input.csv and include a list of switchers with a password optionally (default password in secrets will be overridden for a single switcher if a row is in `nation,password` format)
-7. run login.py
+6. enter your main nation as useragent in login.py
+7. edit input.csv and include a list of switchers with a password optionally (default password in secrets will be overridden for a single switcher if a row is in `nation,password` format)
+8. run login.py
    ```
    py login.py
    ```
