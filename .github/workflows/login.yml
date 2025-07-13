@@ -31,10 +31,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: write secrets
+    - name: write secrets and nations
       run: |
         touch .env
         echo "PASSWORD=$PASSWORD" >> .env
+        touch input.csv
+        cat ./nations/* > input.csv
 
     - name: run autologin
       run: python login.py

@@ -1,5 +1,7 @@
 # ns-login
-python script to autologin nations with github actions workflow file. `nation,password` format is supported.
+python script to autologin nations with github actions workflow file. `nation,password` format and multiple nation list files is supported.
+
+note that all files in the `/nations` directory will be included in the autologin
 
 ## Usage (github actions)
 
@@ -11,7 +13,8 @@ login.yml has been configured to run every Monday and Thursday at 1 am UTC by de
    https://github.com/[github username]/[repo name]/settings/secrets/actions
    ```
 3. enter your main nation as useragent in login.py
-4. edit input.csv and include a list of switchers with a password optionally (default password in secrets will be overridden for a single switcher if a row is in `nation,password` format)
+4. make one or more lists of switchers with a password optionally in `/nations` folder
+(default password in secrets will be overridden for a single switcher if a row is in `nation,password` format)
 5. run login.yml by going to
    ```
    https://github.com/[github username]/[repo name]/actions/workflows/login.yml
@@ -42,7 +45,8 @@ make sure you have [python](https://www.python.org/downloads/) installed.
    PASSWORD=[your puppet password]
    ```
 6. enter your main nation as useragent in login.py
-7. edit input.csv and include a list of switchers with a password optionally (default password in secrets will be overridden for a single switcher if a row is in `nation,password` format)
+7. make one or more lists of switchers with a password optionally in `/nations` folder
+(default password in secrets will be overridden for a single switcher if a row is in `nation,password` format)
 8. run login.py
    ```
    python login.py
