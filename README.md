@@ -1,7 +1,7 @@
 # ns-login
-python script to autologin nations with github actions workflow file. `nation,password` format and multiple nation list files is supported.
+python script to autologin nations with github actions workflow file. `nation,password` format and multiple nation lists are supported.
 
-note that all files in the `/nations` directory will be included in the autologin
+***note that all files in the `/nations` directory will be included in the autologin***
 
 ## Usage (github actions)
 
