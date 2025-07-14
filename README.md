@@ -51,7 +51,7 @@ make sure you have [python](https://www.python.org/downloads/) installed.
    ```
    touch input.csv
    ```
-9. fill input.csv
+9. fill input.csv (all files inside `/nations` folder will be compiled into input.csv, you can also fill input.csv manually)
    ```
    cat ./nations/* > input.csv
    ```
