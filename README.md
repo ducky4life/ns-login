@@ -47,7 +47,15 @@ make sure you have [python](https://www.python.org/downloads/) installed.
 6. enter your main nation as useragent in login.py
 7. make one or more lists of switchers with a password optionally in `/nations` folder
 (default password in secrets will be overridden for a single switcher if a row is in `nation,password` format)
-8. run login.py
+8. create input.csv
    ```
-   python login.py
+   touch input.csv
    ```
+9. fill input.csv
+   ```
+   cat ./nations/* > input.csv
+   ```
+10. run login.py
+      ```
+      python login.py
+      ```
