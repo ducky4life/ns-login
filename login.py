@@ -21,5 +21,5 @@ if UA != "":
 				pwd = row[1]
 			except IndexError:
 				pwd = str(os.getenv("PASSWORD"))
-			session.api_request("nation", target=row[0], shard="ping", password=pwd)
+			session.api_request("nation", target=row[0], shard="ping", password=pwd, constant_rate_limit=True)
 		print("finished pinging!")
